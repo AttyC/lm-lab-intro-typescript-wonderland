@@ -16,22 +16,10 @@ export function meetTheQueen(): void {
 
   let guilty: boolean = false;
   const witnessNames = [
-    {
-      name: "The Mad Hatter",
-      giveEvidence: () => "Not Guilty",
-    },
-    {
-      name: "The March Hare",
-      giveEvidence: () => "Not Guilty",
-    },
-    {
-      name: "The Cheshire Cat",
-      giveEvidence: () => "Not Guilty",
-    },
-    {
-      name: "The White Rabbit",
-      giveEvidence: () => "Not Guilty",
-    },
+    "The Mad Hatter",
+    "The March Hare",
+    "The Cheshire Cat",
+    "The White Rabbit",
   ];
 
   let witnesses = getWitnesses(witnessNames);
