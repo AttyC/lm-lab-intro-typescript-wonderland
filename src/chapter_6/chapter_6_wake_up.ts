@@ -1,4 +1,5 @@
 import { endAdventure, haveAdventures } from "../..";
+import { haveAPicnic } from "../chapter_7/chapter_7";
 import { askQuestion, clear, print } from "../ui/console";
 
 // ⚠️ This is a very unusual type setup. It's not a great idea in the real world
@@ -32,11 +33,7 @@ export function wakeUp(): void {
     print("Although...❓❓❓");
     print("What are these tarts doing here?! 🥧🥧🥧🥧🥧🥧 🤔");
 
-    print(
-      "✅ CONGRATULATIONS! You successfully made it through Wonderland! 🥳"
-    );
-
-    return askQuestion("Press ENTER to re-enter Wonderland! ", haveAdventures);
+    return askQuestion("Press ENTER to continue! ", haveAPicnic);
   } else {
     print("You are unable to wake up! 😱");
     return endAdventure();
@@ -44,7 +41,6 @@ export function wakeUp(): void {
 }
 
 function tryToWakeUp(): WakeUp {
-  // 👉 FIXME ❌
   return {
     wake: {
       wake: {
